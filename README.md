@@ -1,10 +1,10 @@
 # MQ PVC Inspector tool
 
-This tool is designed to be used with MQ on Redhat Openshift Container Platform or Kubernetes.
+This tool is designed to be used with MQ on Red Hat OpenShift Container Platform or Kubernetes.
 The tool enables errors and other information to be gathered from the PVCs of a Queue Manager in the case where the Queue Manager pod cannot be directly accessed.
 This could be due to a CrashLoopBackoff, Error or some other cause.
 
-In Openshift a Queue Manager can have multiple pods associated with it, and each of those pods can have multiple PVCs.
+In OpenShift a Queue Manager can have multiple pods associated with it, and each of those pods can have multiple PVCs.
 This tool will mount the PVCs associated with all Queue Manager pods of a Queue Manager deployment to a set of PVC inspector pods.
 By mounting the PVCs to the inspector pods the files can be accessed within the inspector pods.
 
