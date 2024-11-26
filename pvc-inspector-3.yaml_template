@@ -16,7 +16,7 @@ spec:
             values:
             - $WORKER
   containers:
-  - image: registry.access.redhat.com/ubi8:latest
+  - image: registry.access.redhat.com/ubi9:latest
     name: pvc-inspector
     command: ["tail"]
     args: ["-f", "/dev/null"]
